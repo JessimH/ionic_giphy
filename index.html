@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" mode="ios">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionic Giffy</title>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <!-- ionic -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <script type="module">
+      import { toastController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+      window.toastController = toastController;
+    </script>
+    <!-- Macy.js -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script defer src="js/macy.js"></script>
+    <!-- customs -->
+    <script defer src="js/config.js"></script>
+    <script defer src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+          <ion-toolbar color="dark">
+            <ion-title>Minimal Giphy</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      
+        <ion-content class="ion-padding">
+          <img class="banner" src="https://media.giphy.com/headers/2020-11-13-41-1605292883/THXGIVING_BANNER_HP-2020.gif" alt="">
+          <p class="accueil">Accueil</p>
+            <ion-toolbar color="dark">
+                <ion-searchbar id="searchbar"></ion-searchbar>
+            </ion-toolbar>
+            <div id="grid">
+                <!-- <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+                </div> -->
+            </div>
+        </ion-content>
+      
+        <ion-footer>
+          <ion-toolbar color="dark-grey">
+            <ion-title>
+                <img src="PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" alt="logo giffy">
+            </ion-title>
+          </ion-toolbar>
+        </ion-footer>
+      </ion-app>
+</body>
+</html>
